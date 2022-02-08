@@ -31,8 +31,8 @@ function replaceScripts($, inputPath) {
         inlineScript.text(content);
         $(this).replaceWith(inlineScript);
 			} else {
-				console.log('/!\\ File not found >>> '.red + spath);
-				$(this).remove();
+				console.log('/!\\ Skip non-local Script >>> '.red + spath);
+				// $(this).remove();
 			}
 		}
   });
